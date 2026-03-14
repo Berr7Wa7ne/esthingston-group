@@ -567,6 +567,12 @@ a:hover {
     padding-bottom: 6px !important;
 }
 
+.property-button {
+    display: flex;
+    justify-content: item-start;
+    margin: 12px;
+}
+
 /*** Team ***/
 .team-item {
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
@@ -791,6 +797,12 @@ h2 { font-size: 2.2rem; }
     font-size: 0.95rem;
     color: #333;
     background: rgba(255,255,255,0.9);
+}
+
+.estate-button {
+    padding: 0 18px 18px;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
