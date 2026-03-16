@@ -1049,5 +1049,27 @@ h2 { font-size: 2.2rem; }
         margin: 8px;
         justify-content: flex-start;
     }
+
+    /* Keep content block order consistent on small screens */
+    .reverse-mobile .col-lg-6:first-child {
+        order: 2;
+    }
+    .reverse-mobile .col-lg-6:last-child {
+        order: 1;
+    }
+
+    /* Force wow elements visible on mobile (fixes disappearing sections) */
+    .wow {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .wow.animated {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    .wow.fadeIn, .wow.fadeInUp, .wow.slideInLeft {
+        animation: none !important;
+    }
 }
 
