@@ -994,3 +994,60 @@ h2 { font-size: 2.2rem; }
     background: linear-gradient(135deg, var(--esth-primary) 0%, #1a0f4f 100%);
     color: #ffffff;
 }
+/* ===== Mobile tweaks ===== */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Reduce button size and text on mobile */
+    .btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .btn-lg-square,
+    .btn-square,
+    .btn-sm-square {
+        width: auto;
+        height: auto;
+        padding: 8px 12px;
+    }
+
+    /* Make hero buttons more compact and prevent overflow */
+    .hero-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        bottom: 5%;
+    }
+
+    .hero-buttons .btn {
+        min-width: 130px;
+    }
+
+    /* Reduce hero height so more page content is visible on mobile */
+    .hero-header {
+        height: 55vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Ensure body content isn't hidden behind the fixed navbar */
+    .main-content {
+        padding-top: 70px;
+    }
+
+    /* Keep property buttons inside card */
+    .property-button {
+        margin: 8px;
+        justify-content: flex-start;
+    }
+}
+
